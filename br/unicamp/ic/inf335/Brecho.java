@@ -33,13 +33,13 @@ public class Brecho {
 		}
 		
 		// Calcula M�dia
-		Double media = 0.0;
-		int i = 1;
-		while (i<=produtos.size()) {
-			media = produtos.get(i).getValor();
+		Double total = 0.0;
+		int i = 0;
+		while (i<produtos.size()) {
+			total += produtos.get(i).getValor();
 			i++;
 		}
-		media = media / i;
+		Double media = total / i;
 		System.out.println("Media de Valores = " + media);
 	}
 
